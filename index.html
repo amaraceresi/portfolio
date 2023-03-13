@@ -10,28 +10,26 @@
 </head>
 
 <body>
-    <header>
-        <h1>Amara Ceresi</h1>
-        <nav>
-            <ul>
-                <li>
-                    <p style="text-align: right;">
-                    <a href="#about">About Me</a>
-                    <a href="#work">Work</a>
-                    <a href="#contact">Contact Me</a>
-                    <a href="#resume">Resume</a></p>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="hero-image">
-        <img src="./assets/images/banner.jpg" alt="sky photo banner" width="2000" height="320" />
-    </div>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#resume">Resume</a></p>     
+    </nav>
+</header>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <h1 class="hero-headline">Amara Ceresi</h1>
+        </div>
+    </header>
+<!-- <img class="hero-img" src="./assets/images/banner.jpg" alt="sky photo banner"> -->
+
 
     <section>
-        <h2 id="about" class="side-border">About Me</h2>
-        <div class = "about">
+        <h2>About Me</h2>
+        <div class="card-container" id="about">
             <p>Welcome! My name is Amara Ceresi, current student learning to code with Vanderbilt’s Full Stack Bootcamp and TN resident. When I am not in class or at work, I enjoy cycling, watching Netflix, playing board games, and spending quality time with my 2 cats, LB and Joanie.</p>
         </div>
     </section>
@@ -39,27 +37,27 @@
     <section>
         <h2>Work</h2>
         <div class="card-container" id="work">
-            <div class = "surfer first-card">
+            <div class = "first-card">
                 <img class="card-img" src="./assets/images/surf.jpg" alt="surfer"/>
                 <h4>Surf Report</h4>
             </div>   
 
-            <div class = "led card">
+            <div class = "card">
                 <img class="card-img" src="./assets/images/led.jpg" alt="led"/>
                 <h4>LED Wall</h4>
             </div>
 
-            <div class= "calculator card">
+            <div class = "card">
                 <img class="card-img" src="./assets/images/calculator.jpg" alt="calculator"/>
                 <h4>Calculator</h4>
             </div>
 
-            <div class= "puzzle card">
+            <div class = "card">
                 <img class="card-img" src="./assets/images/puzzle.jpg" alt="puzzle"/>
-                <h4>Pastel Puzzles</h4> -->
+                <h4>Pastel Puzzles</h4>
             </div>
 
-            <div class= "runner card">
+            <div class = "card">
                 <img class="card-img" src="./assets/images/run.jpg" alt="runner"/>
                 <h4>Run Buddy</h4>
             </div>
@@ -68,14 +66,14 @@
 
     <section>
         <h2>Contact</h2>
-        <div class = "contactme" id="contact">
-                <p style="text-align: center;">
+        <div class = "card-container" id="contact">
+            <div class="contact-info">
                     <a href="">401.248.8920</a>
                     <a href="mailto: aceresi95@icloud.com"> aceresi95@icloud.com</a>
                     <a href="https://github.com/amaraceresi">GitHub</a>
                     <a href="https://twitter.com">Twitter</a>
                     <a href="https://open.spotify.com/?">Spotify</a>
-                </p>
+            </div>
         </div>
     </section>
     
