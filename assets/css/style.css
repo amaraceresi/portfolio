@@ -7,24 +7,26 @@ body {
 
 }
 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+header h1 {
+    color: white;
+    background: grey;
+    padding: 15px 15px 15px 45px;
+    margin: 0;
+}
 .hero {
     background-image: url(https://source.unsplash.com/1600x900?sunset);
     background-position: top;
-    background size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 50vh;
-}
-
-.hero-headline {
-    font-size: 35px;
-    position: absolute;
-    text-align: right;
-    top: -25px;
-    left: 20px;
-    width: 300px;
-    border: 5px solid darkgrey;
-    background-color: darkgray;
-    padding-left: 20px;
 }
 
 .hero-subheader {
@@ -39,6 +41,14 @@ body {
 nav {
     text-align: right;
     margin-top: 30px;
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    padding:0 5px;
 }
 
 
@@ -66,11 +76,22 @@ section div {
     padding: 30px
 }
 
+.contact-info a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: darkblue;
+    text-decoration: none;
+}
+
 .first-card {
     min-height: 400px;
     flex-basis: 100%;
     margin: .5rem;
     margin-bottom: 50px;
+}
+
+section h4 {
+    margin: 0;
 }
 
 .card {
@@ -97,9 +118,9 @@ section div {
 
 @media screen and (max-width: 768px) {
     .hero {
-    display: none;
-    width: 100%;
-    padding-bottom: 30px;
+        display: none;
+        width: 100%;
+        padding-bottom: 30px;
     }
 
     .card-container {
@@ -112,6 +133,22 @@ section div {
 }
 
 @media screen and (max-width: 1000px) {
+    main {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    section {
+        display: block;
+        text-align: center;
+    }
+    .first-card {
+        margin-bottom: 25px;
+    }
+    .card img {
+        object-fit:cover;
+        
+    }
     .hero {
     height: 30vh;        
     width: 100%;
@@ -127,5 +164,16 @@ section div {
 
     .card-container {
         display: inline;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    nav {
+        text-align: center;
+        margin-right: 0;
     }
 }
